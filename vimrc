@@ -105,6 +105,7 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+set relativenumber
 
 " ================ Search ===========================
 
@@ -115,3 +116,9 @@ set smartcase       " ...unless we type a capital
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
+
+" ================ My Settings ======================
+nnoremap <Leader>g :YcmCompleter GoTo <Enter>
+let g:pymode_rope = 0
+let g:pymode_options_max_line_length=121
+let g:pymode_lint_ignore = "C901"

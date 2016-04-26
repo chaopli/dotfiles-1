@@ -125,3 +125,9 @@
   enabled = true
 [include]
   path = .gitconfig.user
+
+[http]
+  sslverify = false
+[user]
+	email = cli@avinetworks.com
+	name = Chao Li
